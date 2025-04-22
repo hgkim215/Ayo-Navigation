@@ -99,6 +99,12 @@ struct AdvancedView1: View {
       } label: {
         Text("서브뷰1로 이동하기")
       }
+
+      Button {
+        pathModel.paths.removeAll()
+      } label: {
+        Text("루트뷰로 돌아가기")
+      }
     }
   }
 }
@@ -115,6 +121,12 @@ struct AdvancedView2: View {
         pathModel.paths.removeLast()
       } label: {
         Text("뒤로가기")
+      }
+
+      Button {
+        pathModel.paths.removeAll()
+      } label: {
+        Text("루트뷰로 돌아가기")
       }
     }
   }
@@ -139,6 +151,12 @@ struct AdvancedView3: View {
       } label: {
         Text("View 4로 이동하기")
       }
+
+      Button {
+        pathModel.paths.removeAll()
+      } label: {
+        Text("루트뷰로 돌아가기")
+      }
     }
   }
 }
@@ -162,6 +180,12 @@ struct AdvancedView4: View {
       } label: {
         Text("View 1로 이동하기")
       }
+
+      Button {
+        pathModel.paths.removeAll()
+      } label: {
+        Text("루트뷰로 돌아가기")
+      }
     }
   }
 }
@@ -178,6 +202,12 @@ struct SubView1: View {
         pathModel.paths.removeLast()
       } label: {
         Text("뒤로가기")
+      }
+
+      Button {
+        pathModel.paths.removeAll()
+      } label: {
+        Text("루트뷰로 돌아가기")
       }
     }
   }
